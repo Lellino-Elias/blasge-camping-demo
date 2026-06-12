@@ -1,253 +1,189 @@
 import type { CampsiteConfig } from "../types";
 
-/**
- * Camping Blasge — Bodensdorf am Ossiacher See, Kärnten.
- * Alle Texte/Fakten belegt aus blasge.at (Stand-Scrape 2026-06).
- * Bilder = ausschließlich eigene Blasge-Fotos in /public/campsites/blasge/
- * (laut Impressum von Frank Lampl / pixelworld.at, Arno Blasge & RDH Websolutions).
- * EHRLICH: Der Platz liegt DIREKT am Ossiacher See mit eigenem Strand
- * ("Camping direkt am See", erste Reihe Kat. I 1–14/21/22). Eigene Sportschule
- * am Strand belegt. Keine eindeutige Auszeichnung auf der Quelle → awards leer.
- * Preise = reale Listenpreise 2026 (Saisontabellen der Detailseiten), "ab"-Werte
- * aus der Nebensaison; Personen-, Strom-, Ortstaxe-/Endreinigungszuschläge offen
- * im priceNote ausgewiesen.
- */
 const IMG = "/campsites/blasge";
 
-export const blasge: CampsiteConfig = {
+const blasge: CampsiteConfig = {
   name: "Camping Blasge",
   shortName: "Blasge",
   slug: "blasge",
   ort: "Bodensdorf am Ossiacher See",
   region: "Kärnten",
-  brandKind: "Camping & Ferienhäuser",
+  brandKind: "Camping am Ossiacher See",
   see: "Ossiacher See",
-  regionLong: "Urlaubsregion Ossiacher See · Gerlitzen Alpe · Kärnten · Österreich",
+  regionLong: "Ossiacher See · Kärnten · Österreich",
 
-  claim: "Ihr Glücksmoment am Ossiacher See",
+  heroVariant: "center",
+
+  claim: "Dein Glücksmoment am Ossiacher See",
   claimEmphasis: "am Ossiacher See",
+  emailDetail: "eure hauseigene Sportschule am eigenen Strand",
   intro:
-    "Familiär geführter Campingplatz direkt am Ossiacher See – mit eigenem Strand, hauseigener Sportschule, modernen Mobilheimen, Ferienwohnungen und Pension, am Fuße der Gerlitzen Alpe in Kärnten.",
+    "Familiär geführt auf rund 1,5 Hektar, direkt am Ossiacher See: ebene Stellplätze in vier Kategorien, moderne Mobilheime und eine hauseigene Sportschule am eigenen Strand — die Gerlitzen Alpe immer im Blick.",
 
-  logo: { src: `${IMG}/logo-a06e3b9770.png`, alt: "Camping Blasge Logo" },
+  logo: { src: `${IMG}/logo.png`, alt: "Camping Blasge Logo" },
 
   statement: {
-    text: "Klein, fein und direkt am Wasser – weit weg vom Massentourismus ist Urlaub bei uns noch Familiensache.",
-    emphasis: "noch Familiensache",
+    text: "Vom Stellplatz sind es nur ein paar Schritte zum eigenen Strand — und zur Sportschule direkt am Wasser.",
+    emphasis: "zum eigenen Strand",
   },
 
   pillars: [
     {
-      title: "Direkt am Ossiacher See",
-      text: "Unser ca. 1,5 Hektar großes, ebenflächiges Areal liegt mit eigenem Strand direkt am traumhaften Ossiacher See – alles bequem zu Fuß erreichbar.",
-      image: { src: `${IMG}/gallery-e6254bc083.webp`, alt: "Luftaufnahme von Camping Blasge direkt am Ossiacher See" },
+      title: "Eigener Strand & Sportschule",
+      text: "Direkt am Campingplatz-Strand bringen dich erfahrene Sportlehrer aufs Wasser — vom ersten Segelschein bis zum Wakeboard-Kick.",
+      image: { src: `${IMG}/activity-50bff4ff23.webp`, alt: "Segeln mit Kind in der Sportschule am Strand von Camping Blasge" },
     },
     {
-      title: "Action & Wassersport",
-      text: "Banane, Reifen, Wasser-Karussell, Wasserski & Wakeboard, dazu Boots- und Radverleih – für Wasserratten und Abenteurer direkt am Strand.",
-      image: { src: `${IMG}/activity-7ca50140c8.webp`, alt: "Wasserspaß auf dem Reifen am Ossiacher See bei Camping Blasge" },
+      title: "Komfortable Mobilheime",
+      text: "Acht moderne Mobilheime im mittleren Areal — je nach Größe für eine bis zwei Familien, mit überdachter Terrasse von 15 m².",
+      image: { src: `${IMG}/accommodation-e21cafdaf3.webp`, alt: "Reihe moderner Mobilheime mit Terrasse am Camping Blasge vor der Gerlitzen Alpe" },
     },
     {
-      title: "Unterkünfte für jede Familie",
-      text: "Vom Stellplatz über Mobilheime und Ferienwohnungen bis zu geräumigen Ferienhäusern und der Pension Blasge – die volle Auswahl in zentraler Lage am Wasser.",
-      image: { src: `${IMG}/accommodation-ab1a555377.webp`, alt: "Ferienhäuser von Camping Blasge mit Blick auf die Berge" },
+      title: "Aktiv rund um den See",
+      text: "Zahlreiche flache Radwege führen rund um den Ossiacher See — mit top-gewarteten Bikes und E-Bikes aus dem hauseigenen Verleih.",
+      image: { src: `${IMG}/gallery-308005fa78.webp`, alt: "Familie beim Radfahren rund um den Ossiacher See bei Camping Blasge" },
     },
   ],
 
   usps: [
-    "Familiär geführt",
-    "Direkt am See mit eigenem Strand",
-    "Hauseigene Sportschule am Strand",
-    "Hunde willkommen (Leinenpflicht)",
-    "Kostenloses WLAN am ganzen Platz",
-    "Gerlitzen Alpe nur 6 km · Gratis-Skibus im Winter",
+    "Direkt am Ossiacher See",
+    "Eigener Strand",
+    "Hauseigene Sportschule",
+    "Hunde willkommen",
+    "Gerlitzen Alpe ganz nah",
   ],
 
   trust: {
-    heading: "Worauf Sie sich am Camping Blasge verlassen können",
-    headingEmphasis: "verlassen",
+    heading: "Klein, fein und direkt am Wasser",
+    headingEmphasis: "direkt am Wasser",
     intro:
-      "Persönlich und familiär geführt, mit gepflegten Anlagen, die laufend modernisiert und mehrmals täglich gereinigt werden, einer Sportschule direkt am Strand und freundlicher, individueller Betreuung vom ersten Moment an.",
+      "In Familienhand geführt: rund 70 gepflegte Stellplätze, mehrmals täglich gereinigte Sanitäranlagen und kurze Wege auf ebenem Gelände — weit weg vom Massentourismus, mitten am Ossiacher See.",
   },
 
-  // Keine eindeutig belegbare Auszeichnung auf der Quelle → ehrlich leer (Band zeigt nur USP-Pills).
   awards: [],
 
-  saison: { von: "April", bis: "Oktober" },
+  saison: { von: "Ende April", bis: "Oktober" },
 
   hero: {
-    aerial: {
-      src: `${IMG}/hero-7e71d2ddc7.webp`,
-      alt: "Blick vom Camping Blasge über den Ossiacher See auf die Berge",
-    },
+    aerial: { src: `${IMG}/hero-7e71d2ddc7.webp`, alt: "Liegewiese am Ufer des Ossiacher Sees mit Bergblick beim Camping Blasge" },
+  },
+
+  breather: {
+    image: { src: `${IMG}/gallery-3552c41085.webp`, alt: "Überdachte Terrasse einer Unterkunft am Camping Blasge" },
+    line: "Geschützte Terrassen für lange Sommerabende im Freien.",
   },
 
   camping: {
-    heading: "Camping direkt am See",
+    heading: "Camping am CP Blasge",
     intro:
-      "Naturnah und zugleich sportlich: rund 1,5 Hektar mit etwa 70 Stellplätzen auf flachem, bequem begehbarem Gelände – in vier Kategorien, je nach gewünschter Entfernung zum Seeufer.",
+      "Rund 70 Stellplätze in vier Kategorien — gestaffelt nach Nähe zum Seeufer, alle mit Stromanschluss und auf ebenem, kurzwegigem Gelände.",
     features: [
       {
-        title: "Stellplätze in vier Kategorien",
-        text: "Premium-Plätze auf ca. 80–100 m² mit Stromanschluss bis zu ruhigen Plätzen im hinteren Bereich – für Wohnmobil, Wohnwagen und Zelt.",
-        image: { src: `${IMG}/hero-579f4adfed.webp`, alt: "Stellplätze mit Wohnmobilen am Camping Blasge" },
+        title: "Vier Stellplatz-Kategorien",
+        text: "Von der Premium-Kategorie I nah am Ufer (80–100 m²) bis zur kompakten Kategorie IV — du wählst die Lage nach deiner Wunsch-Entfernung zum See.",
+        image: { src: `${IMG}/hero-579f4adfed.webp`, alt: "Stellplätze mit Wohnwagen und Wohnmobil unter Bäumen am Camping Blasge" },
       },
       {
-        title: "Erste Reihe am eigenen Strand",
-        text: "Die Plätze der Kategorie I liegen in begehrter erster Reihe – nur wenige Schritte trennen Sie vom erfrischenden Wasser und der Sportschule am Strand.",
-        image: { src: `${IMG}/gallery-35dc5a2dba.webp`, alt: "Eigener Badestrand von Camping Blasge am Ossiacher See" },
+        title: "Ebenes Gelände, kurze Wege",
+        text: "Das flache, bequem begehbare Areal erreichst du komplett zu Fuß — ganz ohne anstrengende Steigungen, alle Einrichtungen rasch erreichbar.",
+        image: { src: `${IMG}/gallery-3e6090eb44.webp`, alt: "Ebener Weg zwischen den Stellplätzen am Camping Blasge" },
       },
       {
-        title: "Gepflegte, moderne Infrastruktur",
-        text: "Neu renovierte Sanitäranlagen, WC getrennt für Damen und Herren, Stromanschlüsse über den ganzen Platz, eingezäunt und gesichert – laufend gewartet.",
-        image: { src: `${IMG}/gallery-3e6090eb44.webp`, alt: "Gepflegte Stellplätze am Camping Blasge" },
-      },
-      {
-        title: "Ruhige Plätze & Hunde willkommen",
-        text: "Im hinteren Bereich genießen Sie besonders entspannte Atmosphäre. Auch Ihre Vierbeiner sind gern gesehene Gäste (wir bitten um Beachtung der Leinenpflicht).",
-        image: { src: `${IMG}/hero-6a15012280.webp`, alt: "Ruhiger Stellplatz mit Wohnmobil am Camping Blasge" },
+        title: "Stellplatz mit Strom",
+        text: "Stromanschluss an jedem Platz und ausreichend Parkmöglichkeiten direkt bei deinem Stellplatz.",
+        image: { src: `${IMG}/hero-6a15012280.webp`, alt: "Grüner Stellplatz mit Wohnmobil am Camping Blasge" },
       },
     ],
   },
 
   mobilheime: {
-    heading: "Unterkünfte für jeden Geschmack",
+    heading: "Unterkünfte für jeden Anspruch",
     intro:
-      "Lieber feste Wände? Acht moderne Mobilheime, voll ausgestattete Ferienwohnungen, gemütliche Zimmer, geräumige Ferienhäuser und unsere Frühstückspension – vieles davon ganzjährig buchbar.",
+      "Lieber feste Wände statt Zelt? Am Areal findest du Zimmer und Ferienwohnungen, geräumige Ferienhäuser samt Bungalows sowie die Frühstückspension Blasge am Hang über dem See.",
     items: [
       {
-        name: "Mobilheime (Typ A / B / C)",
-        kind: "Mobilheim · Saison Mai–Okt · in Hauptsaison ab 7 Nächte",
-        text: "Acht moderne Mobilheime im Herzen des Areals mit gemütlicher Wohnküche, je nach Typ mit Klimaanlage und einer zusätzlich 15 m² großen, überdachten Veranda.",
-        image: { src: `${IMG}/accommodation-6fd4788569.webp`, alt: "Moderne Mobilheime mit überdachter Terrasse am Camping Blasge" },
-        priceFrom: 68,
-        features: ["32–35,5 m²", "2–6 Personen", "Wohnküche & Veranda"],
-      },
-      {
-        name: "Ferienwohnungen",
-        kind: "Ferienwohnung · ganzjährig buchbar",
-        text: "Voll ausgestattete Ferienwohnungen von kompakt bis großzügig (bis 120 m²), viele mit eigener Küche und Balkon mit Seeblick – ideal für Familien.",
-        image: { src: `${IMG}/hero-67e4056ef2.webp`, alt: "Wohnküche einer Ferienwohnung am Camping Blasge" },
-        priceFrom: 61,
-        features: ["23–120 m²", "bis 10 Personen", "Balkon mit Seeblick"],
+        name: "Zimmer & Ferienwohnungen",
+        kind: "Im ruhigen Camping-Areal",
+        text: "Sechs Einheiten im ruhigen Teil des Areals — Garconniere, Doppelzimmer und Ferienwohnungen mit moderner Komplett-Ausstattung, ideal für Familien mit mehreren Kindern.",
+        image: { src: `${IMG}/accommodation-a608ab18e8.webp`, alt: "Gebäude mit Ferienwohnungen am Camping Blasge" },
+        priceFrom: 49.6,
+        features: ["Moderne Ausstattung", "Ruhige Lage", "Ideal für Familien"],
       },
       {
         name: "Ferienhäuser & Bungalows",
-        kind: "Ferienhaus · ganzjährig buchbar",
-        text: "Ferienhäuser, zwei Bungalows und das Ferienhaus XL für große Familien – mit eigenem Garten für gesellige Grillabende und Balkon mit Blick auf den See.",
-        image: { src: `${IMG}/gallery-450f52b60c.webp`, alt: "Ferienhaus mit Garten und Balkon am Camping Blasge" },
-        features: ["Eigener Garten", "Balkon mit Seeblick", "wenige Gehminuten zum Strand"],
-      },
-      {
-        name: "Zimmer & Garconniere",
-        kind: "Zimmer & FeWo · im Haupthaus",
-        text: "Gemütliche Doppelzimmer und Garconniere im ersten Stock des Haupthauses, zentral am Areal – mit eigenem Balkon und traumhaftem Blick auf den See.",
-        image: { src: `${IMG}/accommodation-63b3140085.webp`, alt: "Haupthaus mit Balkonen am Camping Blasge" },
-        priceFrom: 50,
-        features: ["ca. 16–25 m²", "Balkon · WLAN inkl.", "Blick auf den See"],
+        kind: "Für große Familien",
+        text: "Ferienhäuser, zwei Bungalows und das Ferienhaus XL — mit eigenem Garten für gesellige Grillabende und Seeblick vom Balkon, nur wenige Gehminuten vom Strand.",
+        image: { src: `${IMG}/accommodation-820dc55b0d.webp`, alt: "Ferienhaus mit Garten am Camping Blasge vor Bergkulisse" },
+        priceFrom: 57.1,
+        features: ["Eigener Garten", "Seeblick vom Balkon", "Ganzjährig buchbar"],
       },
       {
         name: "Pension Blasge",
-        kind: "Frühstückspension · ganzjährig",
-        text: "In Unterberg (ca. 1,5 km vom Campingplatz) liegt auf einer Anhöhe unsere Frühstückspension mit Zimmern und Ferienwohnungen – atemberaubender Blick auf See und Ossiacher Alpen.",
-        image: { src: `${IMG}/accommodation-2ddab2b179.webp`, alt: "Frühstückspension Blasge in Unterberg mit Seeblick" },
-        priceFrom: 50,
-        features: ["Zimmer mit Frühstück", "ca. 1,5 km vom Platz", "Seeblick & Gerlitzen-Nähe"],
+        kind: "Frühstückspension · Unterberg",
+        text: "Auf einer Anhöhe in Unterberg (ca. 1,5 km), mit Ausblick auf See und Ossiacher Alpen: Zimmer mit Frühstück und Ferienwohnungen, ganzjährig buchbar.",
+        image: { src: `${IMG}/gallery-479170a13a.webp`, alt: "Frühstückspension Blasge in Unterberg über dem Ossiacher See" },
+        priceFrom: 25,
+        features: ["Frühstück möglich", "Ausblick auf den See", "Ganzjährig geöffnet"],
       },
     ],
   },
 
   aktivitaeten: {
-    heading: "Sport, Action & Erholung am See",
+    heading: "Sommer-Sportschule am Strand",
     intro:
-      "In unserer hauseigenen Sportschule direkt am Strand stehen Ihnen Profis zur Seite – vom ruhigen Naturerlebnis bis zum Adrenalinkick ist für jeden etwas dabei.",
+      "Direkt am Campingplatz-Strand bringen dich erfahrene Sportlehrer aufs Wasser — vom ersten Segelschein bis zum Adrenalinkick. Boote und Räder gibt es im Verleih.",
     items: [
       {
-        title: "Segeln & Surfen",
-        text: "Nachmittags meist leichte, thermische Winde – ideal für Anfänger. Machen Sie bei uns den international gültigen Grundschein direkt am See.",
-        image: { src: `${IMG}/activity-50bff4ff23.webp`, alt: "Segelkurs der Sportschule am Ossiacher See" },
-      },
-      {
         title: "Kajak & SUP",
-        text: "Gleiten Sie beinahe lautlos über den See und erleben Sie die Tier- und Pflanzenwelt hautnah – pures Naturerlebnis für die ganze Familie.",
-        image: { src: `${IMG}/activity-9e8d422c78.webp`, alt: "Kajak & SUP am Ossiacher See bei Camping Blasge" },
+        text: "Fast lautlos über den Ossiacher See gleiten und die Tier- und Pflanzenwelt am Ufer hautnah erleben — Kajak und SUP leihst du direkt am Strand.",
+        image: { src: `${IMG}/activity-9e8d422c78.webp`, alt: "Gruppe beim Kajakfahren auf dem Ossiacher See bei Camping Blasge" },
       },
       {
-        title: "Windsurfen & Baden",
-        text: "Eigener Badestrand direkt am Ossiacher See – einsteigen, abkühlen und das lebendige Treiben auf dem Wasser genießen.",
-        image: { src: `${IMG}/gallery-ac73a2b8b1.webp`, alt: "Windsurfer auf dem Ossiacher See vor Camping Blasge" },
-      },
-      {
-        title: "Wasserski, Wakeboard & Banane",
-        text: "Der Adrenalinkick beim Wasserski und Wakeboarden oder eine rasante Fahrt mit Banane, Reifen und Wasser-Karussell – Familienspaß pur.",
-        image: { src: `${IMG}/gallery-bf1cc9d85e.webp`, alt: "Bananaboot-Fahrt am Ossiacher See bei Camping Blasge" },
-      },
-      {
-        title: "Rad- & E-Bike-Verleih",
-        text: "Zahlreiche Strecken rund um den See laden zum Radeln ein. Top-gewartete Bikes und E-Bikes, dazu geführte Mountainbike-Touren (E-Bike ab € 47,– pro Tag).",
-        image: { src: `${IMG}/gallery-308005fa78.webp`, alt: "Familie beim Radfahren rund um den Ossiacher See" },
+        title: "Banane, Reifen & Wasserspaß",
+        text: "Für den Familienspaß sorgen rasante Fahrten mit Banane und Reifen, dazu Wasserski, Wakeboard und Parasailing — alles über die Sportschule am Platz.",
+        image: { src: `${IMG}/activity-7ca50140c8.webp`, alt: "Kinder beim Reifenfahren auf dem Ossiacher See bei Camping Blasge" },
       },
     ],
   },
 
   anreise: {
-    heading: "So finden Sie zu uns",
+    heading: "Dein Weg an den Ossiacher See",
     modes: [
-      {
-        title: "Mit dem Auto",
-        text: "Richtung Ossiacher See nach Bodensdorf – Fischerweg 6. Ausreichend Parkmöglichkeiten sind direkt am Gelände vorhanden.",
-      },
-      {
-        title: "Mit Bahn & Bus",
-        text: "Eine Bahnanreise ist problemlos möglich: Bahnhof, Supermärkte, Banken, Arzt und Apotheke sind in wenigen Minuten erreichbar.",
-      },
-      {
-        title: "Im Winter zur Gerlitzen",
-        text: "Die Gerlitzen Alpe ist nur 6 km entfernt. Ein kostenloser Skibus bringt Sie direkt zur Talstation der Kanzelbahn in Annenheim.",
-      },
+      { title: "Mit dem Auto", text: "Über die A10 (Tauernautobahn) bis Villach, dann auf der B94 Richtung Feldkirchen nach Bodensdorf — die Abfahrt Ossiacher See liegt rund 8 km vom Platz." },
+      { title: "Mit der Bahn", text: "Der Bahnhof Bodensdorf liegt nur wenige Gehminuten entfernt — eine entspannte Anreise mit der Bahn ist problemlos möglich." },
+      { title: "Vor Ort", text: "Supermärkte, Restaurants, Ärzte und die Schiffsanlegestelle erreichst du in wenigen Minuten zu Fuß — Parkplätze gibt es ausreichend am Platz." },
     ],
   },
 
   galerie: {
-    heading: "Impressionen von unserem Paradies",
-    headingEmphasis: "Paradies",
-    intro:
-      "See, Strand, Sport und gemütliche Unterkünfte – ein paar Eindrücke von Camping Blasge in Bodensdorf am Ossiacher See.",
-    tag: "April bis Oktober",
-    moreCount: 12,
-    images: [
-      { src: `${IMG}/gallery-77da7464b6.webp`, alt: "Blick vom Steg über den Ossiacher See bei Camping Blasge" },
-      { src: `${IMG}/gallery-7c633f0adf.webp`, alt: "Ferienhäuser mit Liegen auf der Wiese am Camping Blasge" },
-      { src: `${IMG}/gallery-76e87dcf8c.webp`, alt: "Gemütliche Unterkunft mit Terrasse am Camping Blasge" },
-      { src: `${IMG}/hero-d45cb8f4ba.webp`, alt: "Gemütliches Doppelzimmer am Camping Blasge" },
-    ],
+    heading: "Impressionen vom Ossiacher See",
+    headingEmphasis: "Ossiacher See",
+    intro: "Strand, Stellplätze und Sportschule — ein paar Eindrücke von unserem Platz am Wasser.",
+    tag: "Ende April bis Oktober",
+    images: [],
   },
 
   booking: {
-    heading: "Verfügbarkeit & Anfrage",
+    heading: "Sichere dir deinen Platz am Ossiacher See",
+    headingEmphasis: "am Ossiacher See",
     intro:
-      "Wählen Sie Zeitraum, Unterkunft und Personen – wir melden uns mit Ihrer persönlichen Verfügbarkeit und einem unverbindlichen Angebot.",
+      "Wähle Zeitraum und Kategorie — wir melden uns persönlich mit deiner Verfügbarkeit und den genauen Konditionen.",
     pricesArePlaceholder: false,
     priceNote:
-      "Richtpreise 2026 ab Nebensaison · Stellplatz zzgl. Personen, Ortstaxe (2,70 €/Pers./Nacht) & Strom · Unterkünfte zzgl. Endreinigung, Strom & Ortstaxe · in der Hauptsaison Mindestaufenthalt",
-    highlight: {
-      title: "Direkt am See mit eigenem Strand",
-      text: "Camping in erster Reihe, hauseigene Sportschule am Strand und kostenloses WLAN am ganzen Platz – Ihr Logenplatz am Ossiacher See.",
-    },
+      "ab-Preise pro Nacht laut Website — Stellplätze zzgl. Personen (Erwachsene ab € 8,50) und Ortstaxe € 2,70 p. P.; Endpreis je nach Saison und Kategorie.",
+    highlight: { title: "Eigener Strand", text: "Vom Stellplatz sind es nur wenige Schritte zum Campingplatz-Strand und zur Sportschule." },
     categories: [
-      // Reale Preisliste Blasge 2026 (Detailseiten). Stellplatz = Platz (ab Kat. IV, Nebensaison € 7,80)
-      // + 2 Erwachsene (à € 6,90) ≈ € 21,60 → ab 22; perExtraGuest ≈ Erwachsener Nebensaison € 6,90.
-      { id: "stellplatz", label: "Stellplatz", perNight: 22, perExtraGuest: 7 },
-      { id: "mobilheim", label: "Mobilheim", perNight: 68 },
-      { id: "ferienwohnung", label: "Ferienwohnung", perNight: 61 },
-      { id: "pension", label: "Pension + Frühstück", perNight: 50 },
+      { id: "stellplatz-1", label: "Stellplatz Kat. I", perNight: 12, perExtraGuest: 8.5 },
+      { id: "stellplatz-4", label: "Stellplatz Kat. IV", perNight: 7.8, perExtraGuest: 6.9 },
+      { id: "zelt", label: "Zeltplatz", perNight: 12 },
+      { id: "mobilheim", label: "Mobilheim", perNight: 67.6 },
     ],
   },
 
   kontakt: {
     coords: { lat: 46.678843, lng: 13.970628 },
-    tel: "+43 664 42 32 006",
-    telHref: "tel:+436644232006",
+    tel: "+43 (0) 664 / 22 17 472",
+    telHref: "tel:+436642217472",
     mail: "office@blasge.at",
     adresse: "Fischerweg 6 · 9551 Bodensdorf am Ossiacher See · Kärnten",
   },
@@ -255,44 +191,16 @@ export const blasge: CampsiteConfig = {
   languages: ["DE"],
 
   nav: [
-    {
-      label: "Unterkünfte",
-      href: "#mobilheime",
-      children: [
-        { label: "Mobilheime", href: "#mobilheime" },
-        { label: "Ferienwohnungen", href: "#mobilheime" },
-        { label: "Ferienhäuser", href: "#mobilheime" },
-        { label: "Pension Blasge", href: "#mobilheime" },
-      ],
-    },
-    {
-      label: "Camping",
-      href: "#camping",
-      children: [
-        { label: "Stellplätze", href: "#camping" },
-        { label: "Eigener Strand", href: "#camping" },
-        { label: "Infrastruktur", href: "#camping" },
-      ],
-    },
-    {
-      label: "Sport & Aktiv",
-      href: "#aktivitaeten",
-      children: [
-        { label: "Segeln & Surfen", href: "#aktivitaeten" },
-        { label: "Kajak & SUP", href: "#aktivitaeten" },
-        { label: "Rad- & E-Bike-Verleih", href: "#aktivitaeten" },
-      ],
-    },
-    { label: "Galerie", href: "#galerie" },
-    {
-      label: "Preise & Kontakt",
-      href: "#booking",
-      children: [
-        { label: "Preise", href: "#booking" },
-        { label: "Anreise", href: "#anreise" },
-        { label: "Kontakt", href: "#anreise" },
-      ],
-    },
+    { label: "Camping", href: "#camping", children: [
+      { label: "Stellplätze", href: "#camping" },
+      { label: "Strom", href: "#camping" },
+    ]},
+    { label: "Unterkünfte", href: "#mobilheime" },
+    { label: "Sportschule", href: "#aktivitaeten" },
+    { label: "Preise & Anreise", href: "#booking", children: [
+      { label: "Preise", href: "#booking" },
+      { label: "Anreise", href: "#anreise" },
+    ]},
   ],
 };
 
