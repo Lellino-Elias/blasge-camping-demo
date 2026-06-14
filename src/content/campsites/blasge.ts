@@ -80,12 +80,12 @@ const blasge: CampsiteConfig = {
     features: [
       {
         title: "Vier Stellplatz-Kategorien",
-        text: "Von der Premium-Kategorie I nah am Ufer (80–100 m²) bis zur kompakten Kategorie IV — du wählst die Lage nach deiner Wunsch-Entfernung zum See.",
+        text: "Vier Kategorien von Premium nahe am Ufer (80–100 m²) bis kompakt — du wählst deine Wunsch-Entfernung zum See.",
         image: { src: `${IMG}/hero-579f4adfed.webp`, alt: "Stellplätze mit Wohnwagen und Wohnmobil unter Bäumen am Camping Blasge" },
       },
       {
         title: "Ebenes Gelände, kurze Wege",
-        text: "Das flache, bequem begehbare Areal erreichst du komplett zu Fuß — ganz ohne anstrengende Steigungen, alle Einrichtungen rasch erreichbar.",
+        text: "Flaches, bequem begehbares Gelände ohne Steigungen — alle Einrichtungen sind rasch zu Fuß erreichbar.",
         image: { src: `${IMG}/gallery-3e6090eb44.webp`, alt: "Ebener Weg zwischen den Stellplätzen am Camping Blasge" },
       },
       {
@@ -104,7 +104,7 @@ const blasge: CampsiteConfig = {
       {
         name: "Zimmer & Ferienwohnungen",
         kind: "Im ruhigen Camping-Areal",
-        text: "Sechs Einheiten im ruhigen Teil des Areals — Garconniere, Doppelzimmer und Ferienwohnungen mit moderner Komplett-Ausstattung, ideal für Familien mit mehreren Kindern.",
+        text: "Sechs Einheiten im ruhigen Areal: Garconniere, Doppelzimmer und Ferienwohnungen mit moderner Ausstattung für Familien.",
         image: { src: `${IMG}/hero-7c51b61a56.webp`, alt: "Eingang zum Garconniere-Gebäude mit Zimmern und Ferienwohnungen am Camping Blasge" },
         priceFrom: 49.6,
         features: ["Moderne Ausstattung", "Ruhige Lage", "Ideal für Familien"],
@@ -112,7 +112,7 @@ const blasge: CampsiteConfig = {
       {
         name: "Ferienhäuser & Bungalows",
         kind: "Für große Familien",
-        text: "Ferienhäuser, zwei Bungalows und das Ferienhaus XL — mit eigenem Garten für gesellige Grillabende und Seeblick vom Balkon, nur wenige Gehminuten vom Strand.",
+        text: "Ferienhäuser, zwei Bungalows und das XL-Ferienhaus — mit eigenem Garten, Seeblick vom Balkon und kurzem Weg zum Strand.",
         image: { src: `${IMG}/accommodation-820dc55b0d.webp`, alt: "Ferienhaus mit Garten am Camping Blasge vor Bergkulisse" },
         priceFrom: 57.1,
         features: ["Eigener Garten", "Seeblick vom Balkon", "Ganzjährig buchbar"],
@@ -120,7 +120,7 @@ const blasge: CampsiteConfig = {
       {
         name: "Pension Blasge",
         kind: "Frühstückspension · Unterberg",
-        text: "Auf einer Anhöhe in Unterberg (ca. 1,5 km), mit Ausblick auf See und Ossiacher Alpen: Zimmer mit Frühstück und Ferienwohnungen, ganzjährig buchbar.",
+        text: "Auf einer Anhöhe in Unterberg mit Seeblick: Zimmer, Frühstück und Ferienwohnungen, ganzjährig buchbar.",
         image: { src: `${IMG}/gallery-479170a13a.webp`, alt: "Frühstückspension Blasge in Unterberg über dem Ossiacher See" },
         priceFrom: 25,
         features: ["Frühstück möglich", "Ausblick auf den See", "Ganzjährig geöffnet"],
@@ -135,12 +135,12 @@ const blasge: CampsiteConfig = {
     items: [
       {
         title: "Kajak & SUP",
-        text: "Fast lautlos über den Ossiacher See gleiten und die Tier- und Pflanzenwelt am Ufer hautnah erleben — Kajak und SUP leihst du direkt am Strand.",
+        text: "Kajak und SUP leihst du direkt am Strand — und gleitest fast lautlos über den See, nah an Tier- und Pflanzenwelt.",
         image: { src: `${IMG}/activity-9e8d422c78.webp`, alt: "Gruppe beim Kajakfahren auf dem Ossiacher See bei Camping Blasge" },
       },
       {
         title: "Banane, Reifen & Wasserspaß",
-        text: "Für den Familienspaß sorgen rasante Fahrten mit Banane und Reifen, dazu Wasserski, Wakeboard und Parasailing — alles über die Sportschule am Platz.",
+        text: "Banane, Reifen, Wasserski, Wakeboard und Parasailing — der Familienspaß läuft alles über die Sportschule am Platz.",
         image: { src: `${IMG}/activity-7ca50140c8.webp`, alt: "Kinder beim Reifenfahren auf dem Ossiacher See bei Camping Blasge" },
       },
     ],
