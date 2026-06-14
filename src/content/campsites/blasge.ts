@@ -105,7 +105,7 @@ const blasge: CampsiteConfig = {
         name: "Zimmer & Ferienwohnungen",
         kind: "Im ruhigen Camping-Areal",
         text: "Sechs Einheiten im ruhigen Teil des Areals — Garconniere, Doppelzimmer und Ferienwohnungen mit moderner Komplett-Ausstattung, ideal für Familien mit mehreren Kindern.",
-        image: { src: `${IMG}/accommodation-a608ab18e8.webp`, alt: "Gebäude mit Ferienwohnungen am Camping Blasge" },
+        image: { src: `${IMG}/hero-7c51b61a56.webp`, alt: "Eingang zum Garconniere-Gebäude mit Zimmern und Ferienwohnungen am Camping Blasge" },
         priceFrom: 49.6,
         features: ["Moderne Ausstattung", "Ruhige Lage", "Ideal für Familien"],
       },
